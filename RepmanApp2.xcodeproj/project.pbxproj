@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445F2EA61C1D0D55003974D9 /* BLBeanStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 445F2EA51C1D0D54003974D9 /* BLBeanStuff.m */; };
 		44BCD30E1C1D044200DEE960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD30D1C1D044200DEE960 /* main.m */; };
 		44BCD3111C1D044200DEE960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3101C1D044200DEE960 /* AppDelegate.m */; };
 		44BCD3141C1D044200DEE960 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3131C1D044200DEE960 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		44BCD31C1C1D044200DEE960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BCD31A1C1D044200DEE960 /* LaunchScreen.storyboard */; };
 		44BCD3271C1D044200DEE960 /* RepmanApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3261C1D044200DEE960 /* RepmanApp2Tests.m */; };
 		44BCD3321C1D044200DEE960 /* RepmanApp2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3311C1D044200DEE960 /* RepmanApp2UITests.m */; };
+		61416A5321DE9471CB28A001 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA30B6383E9CDDC35DA53CA7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		445F2EA41C1D0D29003974D9 /* BLBeanStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BLBeanStuff.h; path = ../BLBeanStuff.h; sourceTree = "<group>"; };
+		445F2EA51C1D0D54003974D9 /* BLBeanStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBeanStuff.m; sourceTree = "<group>"; };
 		44BCD3091C1D044200DEE960 /* RepmanApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepmanApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BCD30D1C1D044200DEE960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44BCD30F1C1D044200DEE960 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		44BCD32D1C1D044200DEE960 /* RepmanApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepmanApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BCD3311C1D044200DEE960 /* RepmanApp2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepmanApp2UITests.m; sourceTree = "<group>"; };
 		44BCD3331C1D044200DEE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D3963DCF665A66EE0C8C8F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9401255E5546332D5F6AB0C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA30B6383E9CDDC35DA53CA7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61416A5321DE9471CB28A001 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				44BCD3251C1D044200DEE960 /* RepmanApp2Tests */,
 				44BCD3301C1D044200DEE960 /* RepmanApp2UITests */,
 				44BCD30A1C1D044200DEE960 /* Products */,
+				87E4BE13C459F52D39E0B97E /* Pods */,
+				F888AE92EB04BDF788DD4E5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,8 @@
 		44BCD30B1C1D044200DEE960 /* RepmanApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				445F2EA41C1D0D29003974D9 /* BLBeanStuff.h */,
+				445F2EA51C1D0D54003974D9 /* BLBeanStuff.m */,
 				44BCD30F1C1D044200DEE960 /* AppDelegate.h */,
 				44BCD3101C1D044200DEE960 /* AppDelegate.m */,
 				44BCD3121C1D044200DEE960 /* ViewController.h */,
@@ -140,6 +152,23 @@
 			path = RepmanApp2UITests;
 			sourceTree = "<group>";
 		};
+		87E4BE13C459F52D39E0B97E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9401255E5546332D5F6AB0C8 /* Pods.debug.xcconfig */,
+				6D3963DCF665A66EE0C8C8F8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F888AE92EB04BDF788DD4E5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA30B6383E9CDDC35DA53CA7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BCD3361C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2" */;
 			buildPhases = (
+				49332851E6B7E5C72E95B144 /* Check Pods Manifest.lock */,
 				44BCD3051C1D044200DEE960 /* Sources */,
 				44BCD3061C1D044200DEE960 /* Frameworks */,
 				44BCD3071C1D044200DEE960 /* Resources */,
+				79D949B44C83CE2574FC2067 /* Embed Pods Frameworks */,
+				89C2975BC30CDB10BB4ED15C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,11 +297,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49332851E6B7E5C72E95B144 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79D949B44C83CE2574FC2067 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C2975BC30CDB10BB4ED15C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44BCD3051C1D044200DEE960 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445F2EA61C1D0D55003974D9 /* BLBeanStuff.m in Sources */,
 				44BCD3141C1D044200DEE960 /* ViewController.m in Sources */,
 				44BCD3111C1D044200DEE960 /* AppDelegate.m in Sources */,
 				44BCD30E1C1D044200DEE960 /* main.m in Sources */,
@@ -411,6 +492,7 @@
 		};
 		44BCD3371C1D044200DEE960 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9401255E5546332D5F6AB0C8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RepmanApp2/Info.plist;
@@ -422,6 +504,7 @@
 		};
 		44BCD3381C1D044200DEE960 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3963DCF665A66EE0C8C8F8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RepmanApp2/Info.plist;
@@ -498,6 +581,7 @@
 				44BCD3381C1D044200DEE960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BCD3391C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +590,7 @@
 				44BCD33B1C1D044200DEE960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BCD33C1C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +599,7 @@
 				44BCD33E1C1D044200DEE960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  RepmanApp2
+//  RepmanApp
 //
 //  Created by Anatol Liu on 12/12/15.
 //  Copyright © 2015 TheBestTeam. All rights reserved.
@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (void)parseFields;
 
 @end
 
