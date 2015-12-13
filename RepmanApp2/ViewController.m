@@ -20,6 +20,8 @@
 
 @implementation ViewController
 
+@synthesize warningLabel;
+
 int repsPerSet = 0;
 int setsPerExercise = 0;
 int restBetweenSets = 0;
@@ -37,21 +39,31 @@ int restBetweenSets = 0;
     return YES;
 }
 
-- (void)parseFields {
+- (BOOL)parseFields {
     repsPerSet = self.repsPerSetField.text.intValue;
     setsPerExercise = self.setsPerExerciseField.text.intValue;
     restBetweenSets = self.restField.text.intValue;
+    
+    if (repsPerSet == 0 || setsPerExercise == 0 || restBetweenSets == 0) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 - (IBAction)onUpload:(id)sender {
-    [self parseFields];
-    NSString *stuff = [NSString stringWithFormat:@"%d %d %d\n", repsPerSet, setsPerExercise, restBetweenSets];
+    BOOL success = [self parseFields];
+    if (success == NO) {
+        self.warningLabel.text = @"Please enter valid values";
+        return;
+    }
+    NSString *stuff = [NSString stringWithFormat:@"%d,%d,%d,\n", repsPerSet, setsPerExercise, restBetweenSets];
     if (self.connectedBean != NULL) {
         [self.connectedBean sendSerialData:[stuff dataUsingEncoding:NSASCIIStringEncoding]];
     }
 }
 
--(void) connect {
+- (void) connect {
     NSUUID *beanID=[[NSUUID alloc] initWithUUIDString:self.targetBeanIdentifier];
     
     if (![self.myBeanStuff connectToBeanWithIdentifier:beanID] ) {  // Connect directly if we can
@@ -75,6 +87,7 @@ int restBetweenSets = 0;
 - (void) didConnectToBean:(PTDBean *)bean {
     bean.delegate = self;
     self.connectedBean = bean;
+    self.warningLabel.text = @"";
 }
 
 - (void) didUpdateDiscoveredBeans:(NSArray *)discoveredBeans withBean:(PTDBean *)newBean

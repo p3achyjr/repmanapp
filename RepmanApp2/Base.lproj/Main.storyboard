@@ -34,11 +34,21 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets Per Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xma-OH-GUz">
-                                <rect key="frame" x="20" y="186" width="132.5" height="20.5"/>
+                                <rect key="frame" x="20" y="185" width="132.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrU-aX-eew">
+                                <rect key="frame" x="20" y="214" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didClickBackground:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="gUu-md-1bC"/>
+                                    <action selector="editingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DSj-ER-hVb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oEV-47-UNk"/>
+                                </connections>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Rest Between Sets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-Vs-0X0">
                                 <rect key="frame" x="20" y="274.5" width="143.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,16 +72,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="QNv-fn-MPw"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrU-aX-eew">
-                                <rect key="frame" x="20" y="214" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="didClickBackground:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="gUu-md-1bC"/>
-                                    <action selector="editingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DSj-ER-hVb"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oEV-47-UNk"/>
-                                </connections>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Connecting to Bean..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmY-NZ-hVl">
+                                <rect key="frame" x="20" y="66" width="233" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -86,12 +92,15 @@
                             <constraint firstItem="eSe-Vs-0X0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X7V-B8-dJL"/>
                             <constraint firstItem="y0E-jm-LgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xvi-HR-x9g"/>
                             <constraint firstItem="WrU-aX-eew" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZJo-gc-K02"/>
+                            <constraint firstItem="wmY-NZ-hVl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Zf3-CI-A3y"/>
                             <constraint firstItem="hYf-tk-7UD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fRd-tR-yTc"/>
-                            <constraint firstItem="xma-OH-GUz" firstAttribute="top" secondItem="y0E-jm-LgH" secondAttribute="bottom" constant="31.5" id="gtm-91-kBE"/>
+                            <constraint firstItem="xma-OH-GUz" firstAttribute="top" secondItem="y0E-jm-LgH" secondAttribute="bottom" constant="30.5" id="gtm-91-kBE"/>
                             <constraint firstItem="0fY-Yw-mwz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="l4B-0r-lmA"/>
                             <constraint firstItem="xma-OH-GUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mQd-24-qdz"/>
                             <constraint firstItem="WrU-aX-eew" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qOY-9y-p6a"/>
+                            <constraint firstItem="hYf-tk-7UD" firstAttribute="top" secondItem="wmY-NZ-hVl" secondAttribute="bottom" constant="8" id="rFG-35-Kqg"/>
                             <constraint firstItem="WrU-aX-eew" firstAttribute="top" secondItem="xma-OH-GUz" secondAttribute="bottom" constant="8" id="tRO-7A-jzO"/>
+                            <constraint firstItem="wmY-NZ-hVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xmy-qO-qnI"/>
                             <constraint firstItem="hYf-tk-7UD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="yRB-zw-Tpy"/>
                         </constraints>
                     </view>
@@ -99,6 +108,7 @@
                         <outlet property="repsPerSetField" destination="y0E-jm-LgH" id="5N2-Un-8iO"/>
                         <outlet property="restField" destination="0fY-Yw-mwz" id="T9t-Y2-rJv"/>
                         <outlet property="setsPerExerciseField" destination="WrU-aX-eew" id="VfQ-do-7Uj"/>
+                        <outlet property="warningLabel" destination="wmY-NZ-hVl" id="fxZ-vy-CV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

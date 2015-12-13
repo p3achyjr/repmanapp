@@ -13,8 +13,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *repsPerSetField;
 @property (weak, nonatomic) IBOutlet UITextField *setsPerExerciseField;
 @property (weak, nonatomic) IBOutlet UITextField *restField;
+@property (weak, nonatomic) IBOutlet UILabel *warningLabel;
 
-- (void)parseFields;
+- (BOOL)parseFields;
 - (IBAction)didClickBackground:(id)sender;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 - (IBAction)editingDidEnd:(id)sender;
