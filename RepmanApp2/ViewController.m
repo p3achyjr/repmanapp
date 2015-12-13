@@ -10,9 +10,6 @@
 #import "BLBeanStuff.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *repsPerSetField;
-@property (weak, nonatomic) IBOutlet UITextField *setsPerExerciseField;
-@property (weak, nonatomic) IBOutlet UITextField *restField;
 
 @end
 
@@ -22,11 +19,23 @@ int repsPerSet = 0;
 int setsPerExercise = 0;
 int restBetweenSets = 0;
 
+- (IBAction)didClickBackground:(id)sender {
+    [self.view endEditing:YES];
+}
+
+- (IBAction)editingDidEnd:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (void)parseFields {
     repsPerSet = self.repsPerSetField.text.intValue;
     setsPerExercise = self.setsPerExerciseField.text.intValue;
     restBetweenSets = self.restField.text.intValue;
-
 }
 
 - (IBAction)onUpload:(id)sender {
