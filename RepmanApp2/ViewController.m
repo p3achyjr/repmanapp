@@ -11,6 +11,11 @@
 
 @interface ViewController ()
 
+@property (nonatomic,strong) NSArray *beans;
+@property (nonatomic,strong) BLBeanStuff *myBeanStuff;
+@property (nonatomic,strong) NSString *targetBeanIdentifier;
+@property (nonatomic,strong) PTDBean *connectedBean;
+
 @end
 
 @implementation ViewController
@@ -40,11 +45,43 @@ int restBetweenSets = 0;
 
 - (IBAction)onUpload:(id)sender {
     [self parseFields];
+    NSString *stuff = [NSString stringWithFormat:@"%d %d %d\n", repsPerSet, setsPerExercise, restBetweenSets];
+    if (self.connectedBean != NULL) {
+        [self.connectedBean sendSerialData:[stuff dataUsingEncoding:NSASCIIStringEncoding]];
+    }
+}
+
+-(void) connect {
+    NSUUID *beanID=[[NSUUID alloc] initWithUUIDString:self.targetBeanIdentifier];
+    
+    if (![self.myBeanStuff connectToBeanWithIdentifier:beanID] ) {  // Connect directly if we can
+        [self.myBeanStuff startScanningForBeans];                   // Otherwise scan for the bean
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.targetBeanIdentifier = @"3C3100BB-39D1-7EAF-6504-86F561D73348";
+    
+    self.myBeanStuff=[BLBeanStuff sharedBeanStuff];
+    self.myBeanStuff.delegate=self;
+    
+    [self.myBeanStuff startScanningForBeans];
+    self.connectedBean = NULL;
+    NSLog(@"WORKKKKK");
+}
+
+- (void) didConnectToBean:(PTDBean *)bean {
+    bean.delegate = self;
+    self.connectedBean = bean;
+}
+
+- (void) didUpdateDiscoveredBeans:(NSArray *)discoveredBeans withBean:(PTDBean *)newBean
+{
+    if ([newBean.identifier.UUIDString isEqualToString:self.targetBeanIdentifier]) {
+        [self connect];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

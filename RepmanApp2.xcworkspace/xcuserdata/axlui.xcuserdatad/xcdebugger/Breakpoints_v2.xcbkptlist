@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RepmanApp2/ViewController.m"
-            timestampString = "471730933.509709"
+            timestampString = "471737290.936123"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "-didClickBackground:"
             landmarkType = "5">
          </BreakpointContent>

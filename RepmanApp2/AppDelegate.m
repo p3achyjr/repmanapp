@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BLBeanStuff.h"
 
 @interface AppDelegate ()
 
