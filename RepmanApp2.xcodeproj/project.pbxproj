@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44BCD30E1C1D044200DEE960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD30D1C1D044200DEE960 /* main.m */; };
+		44BCD3111C1D044200DEE960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3101C1D044200DEE960 /* AppDelegate.m */; };
+		44BCD3141C1D044200DEE960 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3131C1D044200DEE960 /* ViewController.m */; };
+		44BCD3171C1D044200DEE960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BCD3151C1D044200DEE960 /* Main.storyboard */; };
+		44BCD3191C1D044200DEE960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BCD3181C1D044200DEE960 /* Assets.xcassets */; };
+		44BCD31C1C1D044200DEE960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BCD31A1C1D044200DEE960 /* LaunchScreen.storyboard */; };
+		44BCD3271C1D044200DEE960 /* RepmanApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3261C1D044200DEE960 /* RepmanApp2Tests.m */; };
+		44BCD3321C1D044200DEE960 /* RepmanApp2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCD3311C1D044200DEE960 /* RepmanApp2UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44BCD3231C1D044200DEE960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BCD3011C1D044200DEE960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BCD3081C1D044200DEE960;
+			remoteInfo = RepmanApp2;
+		};
+		44BCD32E1C1D044200DEE960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BCD3011C1D044200DEE960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BCD3081C1D044200DEE960;
+			remoteInfo = RepmanApp2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44BCD3091C1D044200DEE960 /* RepmanApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepmanApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BCD30D1C1D044200DEE960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44BCD30F1C1D044200DEE960 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44BCD3101C1D044200DEE960 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44BCD3121C1D044200DEE960 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44BCD3131C1D044200DEE960 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44BCD3161C1D044200DEE960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44BCD3181C1D044200DEE960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44BCD31B1C1D044200DEE960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44BCD31D1C1D044200DEE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BCD3221C1D044200DEE960 /* RepmanApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepmanApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BCD3261C1D044200DEE960 /* RepmanApp2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepmanApp2Tests.m; sourceTree = "<group>"; };
+		44BCD3281C1D044200DEE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BCD32D1C1D044200DEE960 /* RepmanApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepmanApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BCD3311C1D044200DEE960 /* RepmanApp2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepmanApp2UITests.m; sourceTree = "<group>"; };
+		44BCD3331C1D044200DEE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44BCD3061C1D044200DEE960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD31F1C1D044200DEE960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD32A1C1D044200DEE960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44BCD3001C1D044200DEE960 = {
+			isa = PBXGroup;
+			children = (
+				44BCD30B1C1D044200DEE960 /* RepmanApp2 */,
+				44BCD3251C1D044200DEE960 /* RepmanApp2Tests */,
+				44BCD3301C1D044200DEE960 /* RepmanApp2UITests */,
+				44BCD30A1C1D044200DEE960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44BCD30A1C1D044200DEE960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BCD3091C1D044200DEE960 /* RepmanApp2.app */,
+				44BCD3221C1D044200DEE960 /* RepmanApp2Tests.xctest */,
+				44BCD32D1C1D044200DEE960 /* RepmanApp2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44BCD30B1C1D044200DEE960 /* RepmanApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				44BCD30F1C1D044200DEE960 /* AppDelegate.h */,
+				44BCD3101C1D044200DEE960 /* AppDelegate.m */,
+				44BCD3121C1D044200DEE960 /* ViewController.h */,
+				44BCD3131C1D044200DEE960 /* ViewController.m */,
+				44BCD3151C1D044200DEE960 /* Main.storyboard */,
+				44BCD3181C1D044200DEE960 /* Assets.xcassets */,
+				44BCD31A1C1D044200DEE960 /* LaunchScreen.storyboard */,
+				44BCD31D1C1D044200DEE960 /* Info.plist */,
+				44BCD30C1C1D044200DEE960 /* Supporting Files */,
+			);
+			path = RepmanApp2;
+			sourceTree = "<group>";
+		};
+		44BCD30C1C1D044200DEE960 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44BCD30D1C1D044200DEE960 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44BCD3251C1D044200DEE960 /* RepmanApp2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44BCD3261C1D044200DEE960 /* RepmanApp2Tests.m */,
+				44BCD3281C1D044200DEE960 /* Info.plist */,
+			);
+			path = RepmanApp2Tests;
+			sourceTree = "<group>";
+		};
+		44BCD3301C1D044200DEE960 /* RepmanApp2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				44BCD3311C1D044200DEE960 /* RepmanApp2UITests.m */,
+				44BCD3331C1D044200DEE960 /* Info.plist */,
+			);
+			path = RepmanApp2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44BCD3081C1D044200DEE960 /* RepmanApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BCD3361C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2" */;
+			buildPhases = (
+				44BCD3051C1D044200DEE960 /* Sources */,
+				44BCD3061C1D044200DEE960 /* Frameworks */,
+				44BCD3071C1D044200DEE960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepmanApp2;
+			productName = RepmanApp2;
+			productReference = 44BCD3091C1D044200DEE960 /* RepmanApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44BCD3211C1D044200DEE960 /* RepmanApp2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BCD3391C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2Tests" */;
+			buildPhases = (
+				44BCD31E1C1D044200DEE960 /* Sources */,
+				44BCD31F1C1D044200DEE960 /* Frameworks */,
+				44BCD3201C1D044200DEE960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BCD3241C1D044200DEE960 /* PBXTargetDependency */,
+			);
+			name = RepmanApp2Tests;
+			productName = RepmanApp2Tests;
+			productReference = 44BCD3221C1D044200DEE960 /* RepmanApp2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44BCD32C1C1D044200DEE960 /* RepmanApp2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BCD33C1C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2UITests" */;
+			buildPhases = (
+				44BCD3291C1D044200DEE960 /* Sources */,
+				44BCD32A1C1D044200DEE960 /* Frameworks */,
+				44BCD32B1C1D044200DEE960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BCD32F1C1D044200DEE960 /* PBXTargetDependency */,
+			);
+			name = RepmanApp2UITests;
+			productName = RepmanApp2UITests;
+			productReference = 44BCD32D1C1D044200DEE960 /* RepmanApp2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44BCD3011C1D044200DEE960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TheBestTeam;
+				TargetAttributes = {
+					44BCD3081C1D044200DEE960 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					44BCD3211C1D044200DEE960 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 44BCD3081C1D044200DEE960;
+					};
+					44BCD32C1C1D044200DEE960 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 44BCD3081C1D044200DEE960;
+					};
+				};
+			};
+			buildConfigurationList = 44BCD3041C1D044200DEE960 /* Build configuration list for PBXProject "RepmanApp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44BCD3001C1D044200DEE960;
+			productRefGroup = 44BCD30A1C1D044200DEE960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44BCD3081C1D044200DEE960 /* RepmanApp2 */,
+				44BCD3211C1D044200DEE960 /* RepmanApp2Tests */,
+				44BCD32C1C1D044200DEE960 /* RepmanApp2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44BCD3071C1D044200DEE960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BCD31C1C1D044200DEE960 /* LaunchScreen.storyboard in Resources */,
+				44BCD3191C1D044200DEE960 /* Assets.xcassets in Resources */,
+				44BCD3171C1D044200DEE960 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD3201C1D044200DEE960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD32B1C1D044200DEE960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44BCD3051C1D044200DEE960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BCD3141C1D044200DEE960 /* ViewController.m in Sources */,
+				44BCD3111C1D044200DEE960 /* AppDelegate.m in Sources */,
+				44BCD30E1C1D044200DEE960 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD31E1C1D044200DEE960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BCD3271C1D044200DEE960 /* RepmanApp2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BCD3291C1D044200DEE960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BCD3321C1D044200DEE960 /* RepmanApp2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44BCD3241C1D044200DEE960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BCD3081C1D044200DEE960 /* RepmanApp2 */;
+			targetProxy = 44BCD3231C1D044200DEE960 /* PBXContainerItemProxy */;
+		};
+		44BCD32F1C1D044200DEE960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BCD3081C1D044200DEE960 /* RepmanApp2 */;
+			targetProxy = 44BCD32E1C1D044200DEE960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44BCD3151C1D044200DEE960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44BCD3161C1D044200DEE960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44BCD31A1C1D044200DEE960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44BCD31B1C1D044200DEE960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44BCD3341C1D044200DEE960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44BCD3351C1D044200DEE960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44BCD3371C1D044200DEE960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RepmanApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44BCD3381C1D044200DEE960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RepmanApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44BCD33A1C1D044200DEE960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepmanApp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepmanApp2.app/RepmanApp2";
+			};
+			name = Debug;
+		};
+		44BCD33B1C1D044200DEE960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RepmanApp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepmanApp2.app/RepmanApp2";
+			};
+			name = Release;
+		};
+		44BCD33D1C1D044200DEE960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RepmanApp2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RepmanApp2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44BCD33E1C1D044200DEE960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RepmanApp2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheBestTeam.RepmanApp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RepmanApp2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44BCD3041C1D044200DEE960 /* Build configuration list for PBXProject "RepmanApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BCD3341C1D044200DEE960 /* Debug */,
+				44BCD3351C1D044200DEE960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BCD3361C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BCD3371C1D044200DEE960 /* Debug */,
+				44BCD3381C1D044200DEE960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44BCD3391C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BCD33A1C1D044200DEE960 /* Debug */,
+				44BCD33B1C1D044200DEE960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44BCD33C1C1D044200DEE960 /* Build configuration list for PBXNativeTarget "RepmanApp2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BCD33D1C1D044200DEE960 /* Debug */,
+				44BCD33E1C1D044200DEE960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44BCD3011C1D044200DEE960 /* Project object */;
+}
