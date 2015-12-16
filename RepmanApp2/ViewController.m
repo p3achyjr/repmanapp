@@ -74,14 +74,13 @@ int restBetweenSets = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.targetBeanIdentifier = @"3C3100BB-39D1-7EAF-6504-86F561D73348";
+    self.targetBeanIdentifier = @"596E1150-6BA7-885B-DBD0-13AA24C7F862";
     
     self.myBeanStuff=[BLBeanStuff sharedBeanStuff];
     self.myBeanStuff.delegate=self;
     
     [self.myBeanStuff startScanningForBeans];
     self.connectedBean = NULL;
-    NSLog(@"WORKKKKK");
 }
 
 - (void) didConnectToBean:(PTDBean *)bean {
